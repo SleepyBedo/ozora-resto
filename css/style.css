@@ -4,13 +4,117 @@
     box-sizing: border-box;
 }
 
-#outline {
-    background-color: rgb(7, 7, 7);
-    height: 4350px;
-    max-width: 990px;
-    margin: 0 auto;
+body {
+    background-color: black;
 }
 
-.judul {
+.outline {
+    background-color: #d9effc;
+    height: 4350px;
+    max-width: 990px;
+    width:100%;
+    margin: 0 auto;
     position: relative;
 }
+
+img, p, .button {
+position: absolute;
+}
+
+.bgradient {
+    bottom: 0px;
+}
+
+.banner {
+    z-index: 10;
+}
+
+.judul{
+    left: 140px;
+    top: 78px;
+    z-index: 27;
+}
+
+.lantern {
+    right:0px;
+    top: -60px;
+    z-index: 26;
+}
+
+.branch {
+    left: 0px;
+    top: 0px;
+    z-index: 26;
+}
+
+.button-background {
+    top: 635px;
+    z-index: 8;
+}
+
+.button-title {
+    left: 40px;
+    top: 1190px;
+    z-index: 20;
+}
+
+
+.button p {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-image: -moz-linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
+    background-image: -ms-linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
+    box-shadow: 0px 25px 0px 0px rgba(230, 44, 118, 0.49);
+    font-size: 50px;
+    width: 500px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "01FLOPDESIGN";
+    color: rgb(230, 32, 115);
+    line-height: 1.2;
+    -moz-transform: matrix(0.53550384508597, 0, 0, 0.53550384508597, 0, 0);
+    -webkit-transform: matrix(0.53550384508597, 0, 0, 0.53550384508597, 0, 0);
+    -ms-transform: matrix(0.53550384508597, 0, 0, 0.53550384508597, 0, 0);
+    z-index: 15;
+    position: absolute;
+}
+
+.buttonimg1, .buttonimg2, .buttonimg3 {
+    top: 1300px;
+    position: absolute;
+}
+
+.buttonimg1 {
+    left: -80px;
+}
+
+.buttonimg2 {
+    left: 255px;
+}
+
+.buttonimg3 {
+    left: 570px;   
+}
+
+.arrow1, .arrow2, .arrow3 {
+    top: 1434px;
+    width: 59px;
+    height: 42px;
+    z-index: 10;
+}
+
+.arrow1 {
+    left: 142px;
+}
+
+.arrow2 {
+    left: 459px;
+}
+
+.arrow3 {
+    left: 781px;
+}
+
