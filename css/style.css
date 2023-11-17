@@ -15,56 +15,98 @@ body {
     width:100%;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
-img, p, .button {
-position: absolute;
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:1180px;
+    width:100%;
+    position: relative;
 }
 
-.bgradient {
-    bottom: 0px;
+.button {
+    background-image: url(../img/button.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:516px ;
+    width:100% ;
+    position: relative;
 }
 
-.banner {
-    z-index: 10;
+.menu {
+    background-image: url(../img/menu.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:1567px ;
+    width:100% ;
+    position: relative;
 }
 
-.judul{
+.coupon {
+    background-image: url(../img/coupon.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:485px ;
+    width:100% ;  
+    position: relative;
+}
+
+.footer {
+    background-image: url(../img/footer.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 602px;
+    width: 100%;
+    position: relative;
+}
+
+.judul {
     left: 140px;
     top: 78px;
     z-index: 27;
+    animation: swaying 7s infinite;
+    position:absolute;
 }
 
 .lantern {
-    right:0px;
+    right: -15px;
     top: -60px;
     z-index: 26;
+    animation: swaying 7s infinite;
+    position: absolute;
 }
 
 .branch {
-    left: 0px;
-    top: 0px;
+    left: -10px;
+    position: absolute;
     z-index: 26;
+    animation: swaying 7s infinite;
+    position: absolute;
 }
 
-.button-background {
-    top: 635px;
-    z-index: 8;
+@keyframes swaying {
+    50% {
+        transform: rotate(5deg);
+    }
 }
 
-.button-title {
-    left: 40px;
-    top: 1190px;
-    z-index: 20;
+.buttonposition, .arrow {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.arrow {
+    
+}
 
 .button p {
     border: 5px solid rgb(255, 255, 255);
     border-radius: 50px;
-    background-image: -moz-linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
-    background-image: -ms-linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
+    background-image: linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
     box-shadow: 0px 25px 0px 0px rgba(230, 44, 118, 0.49);
     font-size: 50px;
     width: 500px;
@@ -75,35 +117,9 @@ position: absolute;
     font-family: "01FLOPDESIGN";
     color: rgb(230, 32, 115);
     line-height: 1.2;
-    -moz-transform: matrix(0.53550384508597, 0, 0, 0.53550384508597, 0, 0);
-    -webkit-transform: matrix(0.53550384508597, 0, 0, 0.53550384508597, 0, 0);
-    -ms-transform: matrix(0.53550384508597, 0, 0, 0.53550384508597, 0, 0);
+    transform: matrix(0.53550384508597, 0, 0, 0.53550384508597, 0, 0);
     z-index: 15;
     position: absolute;
-}
-
-.buttonimg1, .buttonimg2, .buttonimg3 {
-    top: 1300px;
-    position: absolute;
-}
-
-.buttonimg1 {
-    left: -80px;
-}
-
-.buttonimg2 {
-    left: 255px;
-}
-
-.buttonimg3 {
-    left: 570px;   
-}
-
-.arrow1, .arrow2, .arrow3 {
-    top: 1434px;
-    width: 59px;
-    height: 42px;
-    z-index: 10;
 }
 
 .arrow1 {
@@ -118,3 +134,117 @@ position: absolute;
     left: 781px;
 }
 
+.text h3 {
+    font-size: 100px;
+    font-family: "HGSoeiPresenceEB";
+    color: rgb(231, 59, 123);
+    font-weight: bolder;
+    line-height: 1.2;
+    z-index: 55;
+}
+
+.text {
+    font-size: 54px;
+    font-family: "A-OTF UD Shin Go NT Pro";
+    color: rgb(231, 59, 123);
+    line-height: 1.9;
+    transform: matrix(0.44959770860536, -3.35868208774729e-16, 1.80470893910079e-16, 0.44959770860536, 0, 0);
+    z-index: 56;
+    position: relative;
+}
+
+#firstmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstmenu p {}
+
+.menuimg {
+    position: relative;
+}
+
+#firstmenu img {
+
+    width: 411px;
+    height: 341px;
+    z-index: 51;
+}
+
+.text {}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.212);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: auto;
+    background: #fff;
+    border-radius: 20px;
+    width: 15%;
+    height: 30%;
+    transition: all 1s ease-in-out;
+    z-index: 200;
+}
+
+.popup img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.popup,
+.close {
+    position: relative;
+    top: 35%;
+    transition: all 300ms;
+    font-size: 70px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    z-index: 100;
+}
+
+.popup,
+.close:hover {
+    color: #df1c1c;
+}
+
+.popup,
+.container {
+    overflow: auto;
+    max-width: 500px;
+    height: 370px;
+    width: 100%;
+}
+
+.container img {
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 15px;
+}
