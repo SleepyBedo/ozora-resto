@@ -8,64 +8,116 @@
 </head>
 <body>
     <div class="outline">
+        <!-- This is header -->
         <div class="header">
             <img class="branch" src="img/brach.png">
             <img class="lantern" src="img/lantern.png">
             <img class="judul" src="img/judul.png">
         </div>
+
+        <!-- This is button -->
         <div class="button">
             <img class="button-title" src="img/buttonhead.png">
-            <div class="buttonposition">
-                <div class="button1">
+            <ol>
+                <li class="box">
                     <a href="#firstmenu" class="buttonimg1">
-                        <p>魚介カレー</p>
+                    <p>魚介カレー</p>
                     </a>
-                </div>
-                <div class="button2">
+                    <img class="arrow" src="img/arrow.png">
+                </li>
+                <li class="box">
                     <a href="#secondmenu" class="buttonimg2">
-                        <p>牛タンラーメン</p>
+                    <p>牛タンラーメン</p>
                     </a>
-                </div>
-                <div class="button3">
+                    <img class="arrow" src="img/arrow.png">
+                </li>
+                <li class="box">
                     <a href="#thirdmenu" class="buttonimg3">
-                        <p>ひつまぶし</p>
+                    <p>ひつまぶし</p>
                     </a>
-                </div>
-            </div>
-            <div class="arrow">
-                <img class="arrow1" src="img/arrow.png">
-                <img class="arrow2" src="img/arrow.png">
-                <img class="arrow3" src="img/arrow.png">
-            </div>
+                    <img class="arrow" src="img/arrow.png">
+                </li>
+            </ol>
         </div>
+
+        <!-- This is menu -->
         <div class="menu">
-            <div id="firstmenu" class="menu1">
-                <div class="text">
-                <h3>魚介カレー</h3>
-                <p>エビ・あさり・イカが旨味たっぷりの魚介カレー。
-                    <br>◎大盛り【350g：＋100円(税込)】
-                    <br>・小盛り【150g：－50円(税込)】もできます。
-                    <br>◎辛さが選べます。※期間限定メニューは、
-                    <br>2022年11月以降食材がなくなり次第終了
-                    <br>とさせていただきます。
-                </p></div>
-                <div class="menuimg">
+            <div id="firstmenu">
+                <div class="text menu1">
+                    <h3>魚介カレー</h3>
+                    <p>エビ・あさり・イカが旨味たっぷりの魚介カレー。
+                        <br>◎大盛り【350g：＋100円(税込)】
+                        <br>・小盛り【150g：－50円(税込)】もできます。
+                        <br>◎辛さが選べます。※期間限定メニューは、
+                        <br>2022年11月以降食材がなくなり次第終了
+                        <br>とさせていただきます。
+                    </p>
+                </div>
+                <div>
                     <a href="#popup1"><img src="img/menu1.png" alt="魚介カレー"></a>
                 </div>
-                
-                <div id="popup1" class="overlay">
-                    <div class="popup">
-                        <div class="container">
-                            <img src="img/popup1.jpg">
-                        </div>
-                        <a class="close" href="#firstmenu">x</a>
-                    </div>
+            </div>
+            <div id="secondmenu">
+                <div>
+                    <a href="#popup2"><img src="img/menu2.png" alt="牛タンラーメン"></a>
+                </div>
+                <div class="text menu2">
+                    <h3>牛タンラーメン</h3>
+                    <p>日本全国に人気の厚切り牛たんラーメン。
+                    <br>◎大盛り【350g：＋100円(税込)】
+                    <br>・小盛り【150g：－50円(税込)】もできます。
+                    <br>◎辛さが選べます。
+                    <br>※期間限定メニューは、2022年11月以降食材
+                    <br>がなくなり次第終了とさせていただきます。
+                    </p>
                 </div>
             </div>
-            
+            <div id="thirdmenu">
+                <div class="text menu3">
+                    <h3>ひつまぶし</h3>
+                    <p>強火の遠火で焼き上げる名古屋名物のひつまぶし。
+                    <br>◎大盛り【350g：＋100円(税込)】・小盛り
+                    <br>【150g：－50円(税込)】もできます。
+                    <br>◎辛さが選べます。
+                    <br>※期間限定メニューは、2022年11月以降食材
+                    <br>がなくなり次第終了とさせていただきます。
+                    </p>
+                </div>
+                <div>
+                    <a href="#popup3"><img src="img/menu3.png" alt="ひつまぶし"></a>
+                </div>
+            </div>
         </div>
+
+        <!-- This is popup -->
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <div class="container">
+                    <img src="img/popup1.jpg">
+                </div>
+                <a class="close" href="#firstmenu">x</a>
+            </div>
+        </div>
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <div class="container">
+                    <img src="img/popup2.jpg">
+                </div>
+                <a class="close" href="#secondmenu">x</a>
+            </div>
+        </div>
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <div class="container">
+                    <img src="img/popup3.jpg">
+                </div>
+                <a class="close" href="#thirdmenu">x</a>
+            </div>
+        </div>
+
+        <!-- This is coupon -->
         <div class="coupon">
-        
+            <a target="_blank" href="img/couponimg.jpg"><img src="img/coupon.png" alt="Coupon"></a>
         </div>
         <div class="footer">
         </div>
