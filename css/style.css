@@ -29,7 +29,7 @@ video {
     background-image: url(../img/header.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:46vw;
+    height:61.45vw;
     max-width: 990px;
     width: 100%;
     position: relative;
@@ -42,7 +42,7 @@ video {
     background-image: url(../img/button.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:33vw;
+    height:17.2vw;
     width:100% ;
     max-width: 990px;
     position: relative;
@@ -52,7 +52,7 @@ video {
     background-image: url(../img/menu.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:100vw;
+    height:91.2vw;
     width: 100%;
     max-width: 990px ;
     position: relative;
@@ -62,7 +62,7 @@ video {
     background-image: url(../img/coupon.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:49vw ;
+    height:25.25vw;
     max-width: 990px;
     width:100% ;  
     position: relative;
@@ -72,19 +72,18 @@ video {
     background-image: url(../img/footer.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 110vw;
+    height: 35vw;
     max-width: 990px;
     width: 100%;
     position: relative;
 }
 
 .judul {
-    left: 140px;
-    top: 78px;
-    z-index: 27;
-    position:absolute;
-    max-width: 400px;
-    width: 50%;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    max-width: 684px;
+    width: 80%;
     height: auto;
 }
 
@@ -97,7 +96,6 @@ video {
     max-width: 385px;
     width: 40%;
     display: block;
-
     animation: swaying 7s infinite;
 }
 
@@ -127,35 +125,42 @@ video {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 500px;
     align-items: center;
-    margin: 2%;
-    padding-top: 0.1%;
-    padding-bottom: 0.1%;
+    padding: 3%;
     list-style-type: none;
 }
 
 .button ol li {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    width: 30%;
-    align-items: center;
-    justify-content: center;
+    width: 28%;
+    justify-content: space-between;
 }
 
 .button ol li a{
     max-width: 260px;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
 }
 
+.arrow {
+    max-width: 25%;
+    display: block;
+    margin: 9% auto;
+}
+
+
 .button p {
-    border: 7px solid rgb(255, 255, 255);
+    border: clamp(0.1rem, 1vw, 0.5rem) solid rgb(255, 255, 255);
     border-radius: 50px;
     background-image: linear-gradient(90deg, rgba(247, 230, 231, 0.99608) 0%, rgb(242, 178, 191) 100%);
-    box-shadow: 0px 15px 0px 0px rgba(230, 44, 118, 0.49);
-    font-size: clamp(1rem, );
+    box-shadow: 0px clamp(0.3rem, 1vw, 0.8rem) 0px 0px rgba(230, 44, 118, 0.49);
+    font-size: clamp(0.7rem, 2vw, 1.6rem );
     font-weight: bold;
-    height: 70px; 
+    padding: clamp(0.4rem, 1vw, 1rem);
+    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,19 +174,17 @@ video {
 
 /* This is menu */
 .text h3 {
-    font-size: 50px;
+    font-size: clamp(1.3rem, 3vw, 3rem);
     font-family: "HGSoeiPresenceEB";
     color: rgb(231, 59, 123);
     font-weight: bolder;
     line-height: 1.2;
     text-align: center;
-    width: 500px;
-    margin-top: 3%;
     margin-bottom: 3%;
 }
 
 .text {
-    font-size: 24px;
+    font-size: clamp(0.55rem, 1.3vw, 1.4rem);
     font-family: "A-OTF UD Shin Go NT Pro";
     color: rgb(231, 59, 123);
     line-height: 1.9;
@@ -189,51 +192,53 @@ video {
     letter-spacing: 2px;
 }
 
-.menu1 {
-    margin-right: 32%;
-    margin-top: 17.8%;
-}
-
-#firstmenu, #secondmenu {
+#firstmenu, #secondmenu, #thirdmenu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#firstmenu img {
-    width: 411px;
-    height: 341px;
+#firstmenu {
+    padding-left: 4%;
+    padding-top: 20%;
+    justify-content: flex-start;
+}
+
+#firstmenu a img {
+    max-width: 411px;
+    width: 45%;
     position: absolute;
+    top: 10%;
     right: 0;
-    top: 13%;
 }
 
 #secondmenu {
-    display: flex;
-    justify-content: flex-end;
+ padding-right: 4%;
+ padding-top: 13%;
+ justify-content: flex-end;
 }
 
-.menu2 {
-    margin-top: 10%;
-    margin-right:5%;
-}
+#secondmenu a img{
+    max-width: 391px;
+    width: 33%;
+    position: absolute;
+    left: 0;
+    top:35%;
 
-#secondmenu img{
-    height: 424px;
-    position: relative;
-    left: -44px;
-    top: 50px;
 }
 
 #thirdmenu {
-    margin-top: 12%;
-    margin-left: 5%;
-    display: flex;
+    padding-top: 17%;
+    padding-left: 4%;
+    justify-content: flex-start;
 }
 
 #thirdmenu img {
-    right: 0;
+    max-width: 442px;
+    width: 40%;
     position: absolute;
+    right: 0;
+    top: 65%;
 }
 
 /* This is popup */
@@ -323,7 +328,7 @@ video {
 /* This if footer */
 
 .footer h3 {
-    font-size: clamp(2rem, 1vw, 3rem) ;
+    font-size: clamp(1.3rem, 2.5vw, 2.5rem) ;
     font-family: "A-OTF Futo Min A101 Pr5";
     color: rgb(0, 0, 0);
     font-weight: bolder;
@@ -335,25 +340,44 @@ video {
 }
 
 .footer p {
-    font-size: clamp(1.5rem, 1vw, 2rem) ;
+    font-size: clamp(0.8rem, 1.4vw, 2rem) ;
     font-family: "02UtsukushiMincho";
     color: rgb(0, 0, 0);
     line-height: 1.2;
     letter-spacing: 1.8px;
     text-align: center;
-    z-index: 120;
 }
 
 .text-box {
+    padding-bottom: 2% ;
+    padding-left: 2%;
+    padding-right: 2%;
     background-color: rgba(247, 241, 210, 0.8);
     background-image: url(../img/sakura-footer.png);
+    background-size: clamp(10rem, 13vw, 15rem);
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 10px;
+    background-position-y: 10%;
     max-width: 800px;
-    width: 100%;
+    width: 70%;
     height: auto;
-    padding-bottom: 1%;
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 425px) {
+.header {
+    height: 118.9vw;
+}
+.button {
+    height: 33.234vw;
+}
+.menu {
+    height: 177vw;
+}
+.coupon {
+    height: 49vw;
+}
+.footer {
+    height: 61vw;
+}
+}
