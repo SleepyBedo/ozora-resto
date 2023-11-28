@@ -204,7 +204,7 @@ video {
     justify-content: flex-start;
 }
 
-#firstmenu a img {
+#firstmenu img {
     max-width: 411px;
     width: 45%;
     position: absolute;
@@ -218,7 +218,7 @@ video {
  justify-content: flex-end;
 }
 
-#secondmenu a img{
+#secondmenu img{
     max-width: 391px;
     width: 33%;
     position: absolute;
@@ -380,4 +380,27 @@ video {
 .footer {
     height: 61vw;
 }
+.popup {
+    width: 70%;
+    height: 40%;
+    overflow: hidden;
+}
+.popup img {
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 375px) {
+.text h3 {
+    font-size: 1.1rem ;
+}
+.text {
+    font-size: 0.5rem;
+}
+#firstmenu img {
+    width: 38%;
+}
+#thirdmenu img {
+    width: 38%;
 }
