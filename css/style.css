@@ -364,7 +364,7 @@ video {
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
 .header {
     height: 118.9vw;
 }
@@ -388,6 +388,31 @@ video {
 .popup img {
     width: 100%;
 }
+#secondmenu {
+    padding-top: 23%;
+}
+.text {
+    font-size: 2vw;
+}
+}
+
+@media only screen and (max-width: 425px) {
+.header {
+    height: 118.9vw;
+}
+.button {
+    height: 33.234vw;
+}
+.menu {
+    height: 177vw;
+}
+.coupon {
+    height: 49vw;
+}
+.footer {
+    height: 61vw;
+}
+
 
 }
 
@@ -403,4 +428,8 @@ video {
 }
 #thirdmenu img {
     width: 38%;
+}
+#thirdmenu {
+    margin-top: -10%;
+}
 }
